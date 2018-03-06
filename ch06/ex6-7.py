@@ -22,4 +22,7 @@ people_3 = {
 people = [people_1, people_2, people_3]
 
 for p in people:
-    print(p)
+    name = p['first_name'].title() + p['last_name'].title()
+    age = p['age']
+    city = p['city']
+    print(name, age, city)
